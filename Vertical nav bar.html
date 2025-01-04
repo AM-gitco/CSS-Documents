@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: rgb(204, 211, 207);
+            position: fixed;
+            height: 700px;
+        }
+        li a{
+            display: block;
+            color: rgb(255, 0, 0);
+            padding: 8px 16px;
+            text-decoration-line: none;
+        }
+        li a.active{
+            color: aliceblue;
+            background-color: seagreen;
+        }
+        li a:hover:not(.active){
+            color: white;
+            background-color: black;
+        }
+        h1{
+            font-size: 50px;
+            font-family: "Princess Sofia", cursive;
+            text-transform: uppercase;
+            color: #009879;
+            text-shadow: 2px 2px 20px ;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+    <nav>
+        <ul>
+            <li><a class="active" href="http://127.0.0.1:5500/nav.html">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Sevices</a></li>
+            <li ><a href="">About</a></li>
+            <div  class="bot" style="margin-top: 523px;"></div>
+            <li ><a href="">Help</a></li>
+ 
+        </ul>
+    </nav>
+    </div>
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <h1>Vertical nav bar</h1>
+</div>
+</body>
+</html>

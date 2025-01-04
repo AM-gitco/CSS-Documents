@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 15px;
+    }
+    /* main {
+     height: calc(100vh - 70px);
+     display: flex;
+     background-color: #f9f9f9;
+   }
+   .side-bar {
+      height: 100%;
+      width: 17%;
+      background-color: white;
+      overflow-y:auto;
+    } 
+    .left {
+   display: flex;
+   align-items: center;
+  }
+  
+   #menu {
+   padding: 0 7px;
+   cursor: pointer;
+  } */
+  .search {
+   display: flex;
+  }
+  
+  .search form {
+   display: flex;
+   
+   height: 45px;
+  }
+  .search input {
+    width: 600px;
+    padding:15px;
+    
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius:  25px 1px 1px 25px ;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid grey;
+  }
+  .search button {
+    
+    width: 70px;
+          border-radius: 1px 25px 25px 1px;
+          border: 1px solid gray;
+      
+  }
+   
+  .mic {
+    margin-top: 10px;
+  }
+  .material-icons {
+      color: rgb(100, 100, 100);
+      padding: 0 7px;
+      cursor: pointer;
+    }
+   
+    .all{
+          position: absolute;
+          background-color: black;
+         color: white;
+          top:69px;
+          left: 265px;
+          width:37px;
+          height: 32px;
+          border-radius: 6px;
+          border: none;
+          cursor: pointer;
+      }
+      .all:hover{
+    background-color: black;
+      }
+      .all:active{
+          background-color: rgb(180, 29, 29);
+          color:white;
+      }
+      .music{
+          position: absolute;
+          top: 69px;
+          left: 385px;
+          width: 60px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .music:hover{
+          background-color: darkgray;
+      }
+      .music:active{
+          background-color: black;
+          color: white;
+      }
+      .news{
+          position: absolute;
+          top:69px;
+          left: 315px;
+          width: 60px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .news:hover{
+          background-color: darkgrey;
+      }
+      .news:active{
+          background-color: black;
+          color: white;
+      }
+      .WB{
+          position: absolute;
+          top:69px;
+          left: 455px;
+          width: 120px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .WB:hover{
+          background-color: darkgrey;
+      }
+      .WB:active{
+          background-color: black;
+          color: white;
+      }
+      .live{
+          position: absolute;
+          top:69px;
+          left: 584px;
+          width: 50px;
+          height: 32px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+      }
+      .live:hover{
+          background: darkgray;
+      }
+      .live:active{
+          background-color: black;
+          color: white;
+      }
+      .pkdaramas{
+          position: absolute;
+          top:69px;
+          left: 645px;
+          width: 130px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .pkdaramas:hover{
+          background-color: darkgrey;
+      }
+      .pkdaramas:active{
+          background-color: black;
+          color: white;
+      }
+      .ai{
+          position: absolute;
+          top:69px;
+          left:782px;
+          width: 60px;
+          height:32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .ai:hover{
+          background-color: darkgrey
+      }
+      .ai:active{
+          background-color: black;
+          color:white;
+      }
+      .Ipm{
+          position: absolute;
+          top:69px;
+          left:850px;
+          width: 140px;
+          border-radius: 6px;
+          height:32px ;
+          border: none;
+          cursor: pointer;
+      }
+      .Ipm:hover{
+          background-color: darkgrey;
+      }
+      .Ipm:active{
+          background-color: black;
+          color: white;
+      }
+      .aa{
+          position: absolute;
+          top:69px;
+          left: 999px;
+          width: 90px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .aa:hover{
+          background-color: darkgrey;
+      }
+      .aa:active{
+          background-color: black;
+          color: white;
+      }
+      .ts{
+          position: absolute;
+          top:69px;
+          left:1100px;
+          width:70px;
+          height:32px ;
+          border:none;
+          border-radius:6px ;
+          cursor: pointer;
+      }
+      .ts:hover{
+          background-color: darkgray;
+      }
+      .ts:active{
+          background-color: black;
+          color: white;
+      }
+      .mixes{
+          position: absolute;
+          top: 69px;
+          left:1180px;
+          width: 70px;
+          height:32px;
+          border: none;
+          border-radius:6px;
+          cursor: pointer;
+      }
+      .mixes:hover{
+          background-color: darkgrey;
+      }
+      .mixes:active{
+          background-color: black;
+          color: black;
+      }
+      .liv{
+          position: absolute;
+          top: 69px;
+          left:1260px;
+          width:100px ;
+          height:32px ;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .liv:hover{
+          background-color: darkgray;
+      }
+      .liv:active{
+          background-color: black;
+          color:white;
+      }
+      .games{
+          position: absolute;
+          top:69px ;
+          left: 1367px ;
+          width:60px ;
+          height:32px ;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      } 
+      .games:hover{
+          background-color: darkgray;
+      }
+      .games:active{
+          background-color: black;
+          color:white;
+      }
+  
+  
+  .active {
+     background: #e5e5e5;
+  }
+  .sidebar{
+          position: absolute;
+          overflow-y: scroll;
+          width:17%;
+          height: 100%;
+          top:65px;
+      }
+      .sidebar ul{
+          line-height: 60px;
+          font-family:Roboto,Arial,sans-serif;
+      }
+      .sidebar li{
+      font-size: 15px;
+      font-weight: 3px;
+      padding-left:30px;
+      border: none;
+      }
+      .sidebar li a{
+          color:black;
+        text-decoration: none;
+      }
+      .sidebar li:hover{
+          background-color: whitesmoke;
+      } 
+      #icon{
+      margin-right: 20px;
+      text-align: center;
+      position: relative;
+      top: 5px;
+      }
+  hr {
+     height: 1px;
+     background-color: #e5e5e5;
+     border: none;
+   }
+   /* .content {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+  }
+  
+  .videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .video {
+    width: 270px;
+    margin-bottom: 30px;
+  }
+  .thumbnail {
+    width: 100%;
+    height: 170px;
+  }
+  
+  .thumbnail img {
+    object-fit: cover;
+    height: 94%;
+    width: 100%;
+  }
+  .author img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  .details {
+    display: flex;
+  }
+   
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .title h3 {
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+   
+  .title a,
+  span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+  } */
+  .content {
+    background-color: #e0e0e0; /* Light gray background for the entire video section */
+    width: 100%;
+    height: 80vh; /* Adjust this value as needed */
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+}
+
+/* Video item styling */
+.video {
+    background-color: #ffffff; /* White background for each video */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+/* Thumbnail styling */
+.thumbnail {
+    width: 100%;
+    height: 170px;
+}
+
+.thumbnail img {
+    object-fit: cover;
+    height: 94%;
+    width: 100%;
+}
+
+/* Author styling */
+.author img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Video details styling */
+.details {
+    display: flex;
+}
+
+/* Video title styling */
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h3 {
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.title a,
+span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+.sc-vid{
+    overflow-y: auto;
+    width: 83%;
+    height: 86%;
+    position: absolute;
+    top: 88px;
+    right: 1px;
+}
+.llc{
+        position: relative;
+        top: 25px;
+        opacity: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        padding-left: 30px;
+    }
+

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <link rel="stylesheet" href="sss.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 15px;
+    }
+    
+  .search {
+   display: flex;
+  }
+  
+  .search form {
+   display: flex;
+   
+   height: 45px;
+  }
+  .search input {
+    width: 600px;
+    padding:15px;
+    
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius:  25px 1px 1px 25px ;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid grey;
+  }
+  .search button {
+    
+    width: 70px;
+          border-radius: 1px 25px 25px 1px;
+          border: 1px solid gray;
+      
+  }
+   
+  .mic {
+    margin-top: 10px;
+  }
+ 
+  .material-icons {
+    color: rgb(100, 100, 100);
+      padding: 0 7px;
+      cursor: pointer;
+    }
+   
+    .all{
+          position: absolute;
+          background-color: black;
+         color: white;
+          top:69px;
+          left: 265px;
+          width:37px;
+          height: 32px;
+          border-radius: 6px;
+          border: none;
+          cursor: pointer;
+      }
+      .all:hover{
+    background-color: black;
+      }
+      .all:active{
+          background-color: rgb(180, 29, 29);
+          color:white;
+      }
+      .music{
+          position: absolute;
+          top: 69px;
+          left: 385px;
+          width: 60px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .music:hover{
+          background-color: darkgray;
+      }
+      .music:active{
+          background-color: black;
+          color: white;
+      }
+      .news{
+          position: absolute;
+          top:69px;
+          left: 315px;
+          width: 60px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .news:hover{
+          background-color: darkgrey;
+      }
+      .news:active{
+          background-color: black;
+          color: white;
+      }
+      .WB{
+          position: absolute;
+          top:69px;
+          left: 455px;
+          width: 120px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .WB:hover{
+          background-color: darkgrey;
+      }
+      .WB:active{
+          background-color: black;
+          color: white;
+      }
+      .live{
+          position: absolute;
+          top:69px;
+          left: 584px;
+          width: 50px;
+          height: 32px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+      }
+      .live:hover{
+          background: darkgray;
+      }
+      .live:active{
+          background-color: black;
+          color: white;
+      }
+      .pkdaramas{
+          position: absolute;
+          top:69px;
+          left: 645px;
+          width: 130px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .pkdaramas:hover{
+          background-color: darkgrey;
+      }
+      .pkdaramas:active{
+          background-color: black;
+          color: white;
+      }
+      .ai{
+          position: absolute;
+          top:69px;
+          left:782px;
+          width: 60px;
+          height:32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .ai:hover{
+          background-color: darkgrey
+      }
+      .ai:active{
+          background-color: black;
+          color:white;
+      }
+      .Ipm{
+          position: absolute;
+          top:69px;
+          left:850px;
+          width: 140px;
+          border-radius: 6px;
+          height:32px ;
+          border: none;
+          cursor: pointer;
+      }
+      .Ipm:hover{
+          background-color: darkgrey;
+      }
+      .Ipm:active{
+          background-color: black;
+          color: white;
+      }
+      .aa{
+          position: absolute;
+          top:69px;
+          left: 999px;
+          width: 90px;
+          height: 32px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .aa:hover{
+          background-color: darkgrey;
+      }
+      .aa:active{
+          background-color: black;
+          color: white;
+      }
+      .ts{
+          position: absolute;
+          top:69px;
+          left:1100px;
+          width:70px;
+          height:32px ;
+          border:none;
+          border-radius:6px ;
+          cursor: pointer;
+      }
+      .ts:hover{
+          background-color: darkgray;
+      }
+      .ts:active{
+          background-color: black;
+          color: white;
+      }
+      .mixes{
+          position: absolute;
+          top: 69px;
+          left:1180px;
+          width: 70px;
+          height:32px;
+          border: none;
+          border-radius:6px;
+          cursor: pointer;
+      }
+      .mixes:hover{
+          background-color: darkgrey;
+      }
+      .mixes:active{
+          background-color: black;
+          color: black;
+      }
+      .liv{
+          position: absolute;
+          top: 69px;
+          left:1260px;
+          width:100px ;
+          height:32px ;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      }
+      .liv:hover{
+          background-color: darkgray;
+      }
+      .liv:active{
+          background-color: black;
+          color:white;
+      }
+      .games{
+          position: absolute;
+          top:69px ;
+          left: 1367px ;
+          width:60px ;
+          height:32px ;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+      } 
+      .games:hover{
+          background-color: darkgray;
+      }
+      .games:active{
+          background-color: black;
+          color:white;
+      }
+  
+  
+  .active {
+     background: #e5e5e5;
+  }
+  .sidebar{
+          position: absolute;
+          overflow-y: scroll;
+          width:17%;
+          height: 100%;
+          top:65px;
+      }
+      .sidebar ul{
+          line-height: 60px;
+          font-family:Roboto,Arial,sans-serif;
+      }
+      .sidebar li{
+      font-size: 15px;
+      font-weight: 3px;
+      padding-left:30px;
+      border: none;
+      }
+      .sidebar li a{
+          color:black;
+        text-decoration: none;
+      }
+      .sidebar li:hover{
+          background-color: whitesmoke;
+      } 
+      #icon{
+      margin-right: 20px;
+      text-align: center;
+      position: relative;
+      top: 5px;
+      }
+  hr {
+     height: 1px;
+     background-color: #e5e5e5;
+     border: none;
+   }
+
+  .content {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 80vh; 
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+}
+
+
+.video {
+    background-color: #ffffff; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+
+.thumbnail {
+    width: 100%;
+    height: 170px;
+}
+
+.thumbnail img {
+    object-fit: cover;
+    height: 94%;
+    width: 100%;
+}
+
+
+.author img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+.details {
+    display: flex;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h3 {
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.title a,
+span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+.sc-vid{
+    overflow-y: auto;
+    width: 83%;
+    height: 86%;
+    position: absolute;
+    top: 88px;
+    right: 1px;
+}
+.llc{
+        position: relative;
+        top: 25px;
+        opacity: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        padding-left: 30px;
+    }
+
+    .video-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #000; 
+}
+
+.channel-name, .video-meta {
+    font-size: 12px;
+    color: #606060; 
+    margin: 2px 0;
+}
+#menu:hover{
+    border-width: 20px;
+    border-radius: 100%;
+    background-color: whitesmoke;
+}
+.material-icons:hover{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    
+}
+</style>
+<body>
+    <header class="header"> <div class="logo left">
+      <i id="menu" class="material-icons" >menu</i>
+      <img src="https://www.freecodecamp.org/news/content/images/2022/01/yt-logo.png" style="position: relative; top: 9px;">
+    </div>
+    
+    <div class="search center">
+      <form action="">
+        <input type="text" placeholder="Search" />
+        <button><i class="material-icons">search</i></button>
+      </form>
+      <i class="material-icons mic" class="over">mic</i>
+    </div>
+    
+    <div class="icons right">
+    <span class="material-icons" class="over">video_call</span>
+
+      <i class="material-icons" class="over">notifications</i>
+      <i class="material-icons display-this" class="over">account_circle</i>
+    </div>
+  </header>
+
+  <head>
+    <button class="all"style="font-weight: 700;  font-family: Roboto, sans-serif;">All</button>
+    <button class="music"style="font-weight: 700;  font-family: Roboto, sans-serif;">Music</button>
+    <button class="news"style="font-weight: 700;  font-family: Roboto, sans-serif;">News</button>
+    <button class="WB"style="font-weight: 700;  font-family: Roboto, sans-serif;">Web Devolpment</button>
+    <button class="live"style="font-weight: 700;  font-family: Roboto, sans-serif;">Live</button>
+    <button class="pkdaramas"style="font-weight: 700;  font-family: Roboto, sans-serif;">Pakistani Dramas</button>
+    <button class="ai"style="font-weight: 700;  font-family: Roboto, sans-serif;">AI</button>
+    <button class="Ipm"style="font-weight: 700;  font-family: Roboto, sans-serif;">Indian pop Music</button>
+    <button class="aa"style="font-weight: 700;  font-family: Roboto, sans-serif;">Atif Aslam</button>
+    <button class="ts"style="font-weight: 700;  font-family: Roboto, sans-serif;">T-Series</button>
+    <button class="mixes"style="font-weight: 700;  font-family: Roboto, sans-serif;">Mixes</button>
+    <button class="liv" style="font-weight: 700;  font-family: Roboto, sans-serif;">Live Videos</button>
+    <button class="games"style="font-weight: 700;  font-family: Roboto, sans-serif;">Gaming</button>
+
+</head>
+<div class="sidebar">
+  <ul>
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">home</span>Home</a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">bolt</span>Shorts</a></li>
+      
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">subscriptions</span>Subscription</a></li>
+      <hr style="opacity: 50%">
+
+      <h4 style="padding-left: 15px;font-weight: 200;">You</h4>
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">video_library</span>Library</a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">playlist_play</span>Playlist</a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">history</span>History</a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">smart_display</span>Yourvideo</a></li>
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">schedule</span>watch Later</a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">thumb_up</span>Like </a></li>
+      <hr style="opacity: 50%">
+
+
+      <h4 style="padding-left: 15px;font-weight: 200;">Explore</h4>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">local_fire_department</span>Trending </a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">music_note</span>Music</a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">sports_esports</span>Gaming</a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">feed</span>News</a></li>
+      
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">trophy</span>Sport</a></li>
+      <hr style="opacity: 40%;">
+
+
+      <h4 style="padding-left: 15px;font-weight: 200;">More from YouTube</h4>
+
+      <li><a href="#"><img src="" alt="" id="icon" style="width: 25px;">Yotube Premium</a></li>
+
+      <li><a href="#"><img src="" alt="" id="icon" style="width: 25px;">Youtube Kids</a></li>
+
+      <li><a href="#"><img src="" alt="" id="icon" style="width: 25px;">Youtube Music</a></li>
+
+      <li><a href="#"><img src="" alt="" id="icon" style="width: 25px;">Youtube Studio</a></li>
+      <hr style="opacity: 40%;">
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">settings</span>Setting</a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">flag</span>Report history</a></li>
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">help</span>Help</a></li>
+                  
+                  
+
+      <li><a href="#"><span class="material-symbols-outlined" id="icon">chat_bubble</span>Send Feedback</a></li>
+
+                      
+      <hr style="opacity: 50%;">
+      <p  style="font-family: Arial, Helvetica, sans-serif ;line-height: 20px;font-size: 13px;position: relative;top: 12px;padding-left: 30px;">About Press Copyright Contact us Creater Advertise Developers <br><br>
+      Terms Privacy Policy & SafetyHow YouTube worksTest new features</p>
+      <p class="llc"> &#169 2023 Google LLC</p>
+
+  </ul>
+
+</div>
+     
+      
+      <div class="sc-vid">
+        
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style=" position:absolute;width:350px ;height:215px;left:25px;top:40px;border-radius: 13px;" ></iframe> 
+            
+        
+        <img src="https://yt3.ggpht.com/rUvbP8WFS4cTovLEeSniHtECm-pq6H2YQyu20I7s_sZ2W0UlXI0TeXt-eOVVA9nWMHeqpm2xjg=s68-c-k-c0x00ffffff-no-rj" style="position: absolute;width: 40px;border-radius: 50%;top:263px;left:25px">
+        <div style="position: absolute;top:263px;left: 78px;">
+        <div class="video-details">
+            <h4 class="video-title">Mastering Public Speaking</h4>
+            <p class="channel-name">Toastmasters</p>
+            <p class="video-meta">900K Views • 1 Day Ago</p>
+        </div>
+        </div>
+
+
+
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style=" position:absolute;width:350px ;height:215px;left:390px;top:40px;border-radius: 13px;"></iframe>
+        <img src="https://yt3.ggpht.com/2PJXWySNEUTVwDBo4JhCrUTphZGHU2YMmCuWzSB9Rn6ol2pDxZ5kHV8rwLEnPy0ildiLuQt6=s68-c-k-c0x00ffffff-no-rj" style="position: absolute;width: 40px;border-radius: 50%;top:263px;left: 390px;">
+        <div style="position: absolute;top:263px;left: 445px;">
+        <div class="video-details">
+            <h4 class="video-title">Mindfulness for Beginners</h4>
+            <p class="channel-name">Headspace</p>
+            <p class="video-meta">500K Views • 1 Month Ago</p>
+        </div>
+    </div>
+
+
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style=" position:absolute;width:350px ;height:215px;left:755px;top:40px;border-radius: 13px;" ></iframe>
+            
+        <img src="https://yt3.ggpht.com/J_nSQm3JaXmq_7oxk3KkA-QTUleozG6w34ulYW4lYJ3QOCiVPNxOXQYxLd92rm_m3qf8GYOxT6c=s68-c-k-c0x00ffffff-no-rj" style="position: absolute;width: 40px;border-radius: 50%;top:263px;left:750px">
+        <div style="position: absolute;top:263px;left: 798px;">
+        <div class="video-details">
+            <h4 class="video-title">The Power of Habit</h4>
+            <p class="channel-name">James Clear</p>
+            <p class="video-meta">1M Views • 2 Months Ago</p>
+        </div>
+    </div>
+
+
+
+         <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style=" position:absolute;width:350px ;height:210px;left:25px;top:325px;border-radius: 13px;" ></iframe>
+           
+        <img src="https://yt3.ggpht.com/QD8m2nsmYAuUimGlbYE_MdspDnyMvEkV-NvM2-hGP0d43BkcXhMIIXjYuODhXQ0WtxYB9qVi=s68-c-k-c0x00ffffff-no-rj" style="position: absolute;width: 40px;border-radius: 50%;top:550px;left:20px">
+        <div style="position: absolute;top:545px;left: 67px;">
+        <div class="video-details">
+            <h4 class="video-title">Introverts & Content Creation | Sumudu </h4>
+            <p class="channel-name">Francesco Ciulla</p>
+            <p class="video-meta">2M Views • 3 Months Ago</p>
+        </div>
+    </div>
+
+
+
+
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"  style=" position:absolute;width:350px ;height:210px;left:390px;top:325px;border-radius: 13px;"></iframe>
+        <img src="https://yt3.ggpht.com/mwUhlhp8EWl_QxF2kRt6cBM4egOYhaTG3au89Kfgv_nV69GVVGJipNtC5pKJIeKJ02ciRQk7Jw=s68-c-k-c0x00ffffff-no-rj" style="position: absolute;width: 40px;border-radius: 50%;top:550px;left: 380px;">
+        <div style="position: absolute;top:545px;left: 430px;">
+            <div class="video-details">
+                <h4 class="video-title">10 Minute Home Workout</h4>
+                <p class="channel-name">Fitness Blender</p>
+                <p class="video-meta">300K Views • 4 Weeks Ago</p>
+            </div>
+        </div>
+
+
+
+
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style=" position:absolute;width:350px ;height:210px;left:755px;top:325px;border-radius: 13px;"></iframe>
+        <img src="https://yt3.ggpht.com/GQPvJm_x9eHxapMulvBO9vFcYxILFJqgHesqUifpl_3OWqSe0redVQGErxe72IJWgoJ3rb_R=s68-c-k-c0x00ffffff-no-rj" style="position: absolute;width: 40px;border-radius: 50%;top:550px;left: 750px;">
+
+        <div style="position: absolute;top:545px;left: 800px;">
+        <div class="video-details">
+            <h4 class="video-title">How to Cook Perfect Pasta</h4>
+            <p class="channel-name">Gordon Ramsay</p>
+            <p class="video-meta">1.5M Views • 2 Weeks Ago</p>
+        </div>
+    </div>
+    
+        
+       
+       
+    </div>
+    
+</body>
+</html>
